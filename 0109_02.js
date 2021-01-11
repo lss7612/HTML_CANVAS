@@ -12,8 +12,9 @@ window.onload = function () {
     ctx.fill();
 
     ctx.moveTo(125, 125);
-    ctx.lineTo(125 - 80, 125);
-    ctx.lineTo(125, 125 - 80);
+    ctx.lineTo(45, 125);
+    ctx.lineTo(125, 45);
     ctx.closePath();
+    ctx.stroke();
   }
 };
