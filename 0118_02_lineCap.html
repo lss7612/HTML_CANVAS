@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="lineCap"></canvas>
+    <script>
+      if (document.getElementById('lineCap').getContext) {
+        let ctx = document.getElementById('lineCap').getContext('2d');
+        ctx.lineWidth = 10;
+        ctx.lineCap = 'butt';
+        // ctx.lineCap = 'round';
+        // ctx.lineCap = 'square';
+
+        ctx.beginPath();
+        ctx.moveTo(75, 10);
+        ctx.lineTo(75, 140);
+        ctx.stroke();
+      }
+    </script>
+  </body>
+</html>

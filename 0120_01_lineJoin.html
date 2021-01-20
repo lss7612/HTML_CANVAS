@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script>
+      if (document.getElementById('canvas').getContext) {
+        var ctx = document.getElementById('canvas').getContext('2d');
+        ctx.lineWidth = 10;
+        ctx.lineJoin = 'round';
+        // ctx.lineJoin = 'miter';
+        // ctx.lineJoin = 'bevel';
+        ctx.beginPath();
+        ctx.moveTo(-5, 45);
+        ctx.lineTo(35, 95);
+        ctx.lineTo(75, 45);
+        ctx.lineTo(115, 95);
+
+        ctx.stroke();
+      }
+    </script>
+  </body>
+</html>

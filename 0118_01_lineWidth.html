@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="lineWidth"></canvas>
+
+    <script>
+      if (document.getElementById('lineWidth').getContext) {
+        let ctx = document.getElementById('lineWidth').getContext('2d');
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+        ctx.moveTo(20, 5);
+        ctx.lineTo(20, 140);
+        ctx.stroke();
+      }
+    </script>
+  </body>
+</html>
